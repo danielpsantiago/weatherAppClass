@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/sunny_bg"
+    android:paddingTop="120dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/currentTempTX"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="23°C"
+            android:textSize="64sp"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/currentTempTX"
+            android:layout_alignTop="@+id/currentTempTX" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/currentWeatherDescTX"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Sunny 21/30°C"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:textColor="@android:color/white" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/forecastRV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/item_prevision"
+        android:layout_marginTop="18dp"/>
+
+</LinearLayout>

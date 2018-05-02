@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/weatherImg"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        tools:src="@drawable/ic_sun"/>
+
+    <TextView
+        android:id="@+id/dayTX"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        tools:text="Tuesdayasodao"
+        android:gravity="start|center"
+        android:paddingStart="6dp"
+        android:paddingEnd="6dp"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_toEndOf="@+id/weatherImg"
+        android:layout_alignBottom="@+id/weatherImg"
+        android:layout_alignTop="@+id/weatherImg"
+        android:layout_toStartOf="@+id/minTX"/>
+
+    <TextView
+        android:id="@+id/minTX"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        tools:text="23°C"
+        android:gravity="start|center"
+        android:paddingStart="6dp"
+        android:paddingEnd="6dp"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_alignBottom="@+id/weatherImg"
+        android:layout_alignTop="@+id/weatherImg"
+        android:layout_toStartOf="@+id/maxTX" />
+
+    <TextView
+        android:id="@+id/maxTX"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        tools:text="32°C"
+        android:gravity="start|center"
+        android:paddingStart="6dp"
+        android:paddingEnd="6dp"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/weatherImg"
+        android:layout_alignTop="@+id/weatherImg"/>
+
+</RelativeLayout>

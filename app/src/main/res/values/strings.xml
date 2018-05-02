@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="clear">Limpo</string>
+    <string name="cloudy">Nublado</string>
+    <string name="rain">Chuva</string>
+    <string name="drizzle">Garoa</string>
+    <string name="storm">Tempestade</string>
+    <string name="snow">Neve</string>
+    <string name="sunday">Domingo</string>
+    <string name="monday">Segunda</string>
+    <string name="tuesday">Terça</string>
+    <string name="wednesday">Quarta</string>
+    <string name="thursday">Quinta</string>
+    <string name="friday">Sexta</string>
+    <string name="saturday">Sábado</string>
+    <string name="ok">Ok</string>
+</resources>
